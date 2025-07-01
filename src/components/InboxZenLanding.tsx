@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { 
   Mail, 
   MessageCircle, 
@@ -32,6 +33,11 @@ const InboxZenLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header with Theme Toggle */}
+      <header className="absolute top-0 right-0 z-50 p-6">
+        <ThemeToggle />
+      </header>
+      
       {/* Hero Section */}
       <section className="bg-gradient-hero py-24 lg:py-32">
         <div className="container mx-auto px-4">
