@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'zen-blue': 'hsl(var(--zen-blue))',
+				'soft-indigo': 'hsl(var(--soft-indigo))',
+				'slate-gray': 'hsl(var(--slate-gray))',
+				'cloud-white': 'hsl(var(--cloud-white))',
+				'charcoal': 'hsl(var(--charcoal))',
+				'accent-green': 'hsl(var(--accent-green))',
+				'muted-red': 'hsl(var(--muted-red))'
+			},
+			backgroundImage: {
+				'gradient-zen': 'var(--gradient-zen)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'zen': 'var(--shadow-zen)',
+				'card': 'var(--shadow-card)',
+				'button': 'var(--shadow-button)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
